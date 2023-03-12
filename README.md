@@ -1,7 +1,7 @@
 # Pointer_from_python
 一个在python中的指针类
 
-本模块创建了一个Pointer的指针基类，当他被与其他类继承时将创造一个指针类
+本模块有一个Pointer的指针基类，当他被与其他类继承时将创造一个指针类
 
 例：
 ```
@@ -60,4 +60,7 @@ print(a.split(' '))  # 输出: ['a', 'b']
 ```
 print(type(a) == String)  # 输出: False
 ```
+
+同时，本模块自带了str, int, bool的指针类
+
 其他问题暂时没有发现，欢迎反馈
