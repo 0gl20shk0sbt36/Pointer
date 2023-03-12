@@ -4,7 +4,7 @@
 本模块有一个Pointer的指针基类，当他被与其他类继承时将创造一个指针类
 
 例：
-```
+```python
 from Pointer import Pointer
 
 
@@ -23,21 +23,21 @@ class B(Pointer, A):
 而赋值操作需要对类的变量__value__进行赋值
 
 即：
-```
+```python
 b = B()
 b.__value__ = A()
 ```
 想获取被指向的对象也要通过__value__获取
 
 即：
-```
+```python
 a = b.__value__
 ```
 
 但是如果直接输出是可以调用被指向的类的__str__方法的
 
 即：
-```
+```python
 class String(Pointer, str):
     pass
 
@@ -50,14 +50,14 @@ print(a)  # 输出: b
 同时，普通方法也是可以直接调用的
 
 即：
-```
+```python
 a = String('a b')
 print(a.split(' '))  # 输出: ['a', 'b']
 ```
 但是目前还有一个小问题，就是指针类生成的实例的类型不等于指针类
 
 即：
-```
+```python
 print(type(a) == String)  # 输出: False
 ```
 
