@@ -1,4 +1,4 @@
-# Pointer_from_python
+# Pointer
 一个在python中的指针类
 
 本模块有一个Pointer的指针基类，当他被与其他类继承时将创造一个指针类
@@ -54,13 +54,5 @@ print(a)  # 输出: b
 a = String('a b')
 print(a.split(' '))  # 输出: ['a', 'b']
 ```
-但是目前还有一个小问题，就是指针类生成的实例的类型不等于指针类
 
-即：
-```python
-print(type(a) == String)  # 输出: False
-```
-
-同时，本模块自带了str, int, bool的指针类
-
-其他问题暂时没有发现，欢迎反馈
+本模块自带了str, int, bool的指针类
