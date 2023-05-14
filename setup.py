@@ -4,7 +4,7 @@ with open("README.md", "r", encoding='utf-8') as fh:
     long_description = fh.read()
 
 setup(
-    name='Pointer',
+    name='PyPointer',
     version='1.0.0',
     packages=['Pointer'],
     url='https://github.com/0gl20shk0sbt36/Pointer/tree/pypi',
@@ -18,7 +18,7 @@ setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Development Status :: 5 - Production/Stable",
-        "Intended Audience :: Developers"
+        "Intended Audience :: Developers",
         "Operating System :: OS Independent",
     ],
 )
